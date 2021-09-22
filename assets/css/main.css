@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+@font-face {
+    font-family: Myriad;
+    src: url(../fonts/myriad-pro-cufonfonts/MYRIADPRO-REGULAR.OTF);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: Myriad, Roboto, sans-serif;
+}
+
+
+/* start header */
+
+/* end header */
+
+
+
+/* start slider */
+
+/* end slider */
+
+
+
+/* start about */
+
+/* end about */
+
+
+
+/* start teams */
+
+/* end teams */
+
+
+
+/* palces */
+
+/* end places */
+
+
+
+/* services */
+
+/* end services */
+
+
+
+/* start features */
+
+/* end features */
+
+
+
+/* start contact */
+
+/* end contact */
+
+
+
+/* start footer */
+
+/* end footer */
+
+
+
+/* responsive */
+
+@media screen and (min-width: 1200px) {
+    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+   
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+   
+}
+
+@media screen and (max-width: 600px) {
+   
+}
+
