@@ -20,16 +20,125 @@ li {
 body {
     font-family: Myriad, Roboto, sans-serif;
 }
-
+a:link, a:active, a:visited {
+    text-decoration: none;
+}
+.container{
+    max-width: 1140px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
 
 /* start header */
+header {
+    background-color: #1d2126;
+}
+header h1 {
+    height: 30px;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 15px;
+    line-height: 30px;
+}
+header ul {
+    height: 30px;
+}
+header ul li {
+    display: inline-block;
+    height: 30px;
+}
+header ul li a {
+    display: inline-block;
+    color: #a4aead;
+    font-size:  14px;
+    text-transform:  uppercase;
+    line-height: 30px;
+    padding: 0px 10px;
+    margin: 0px 15px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
 
+header ul li a.active {
+    color: #23b7a4;
+    border-color: #23b7a4;
+}
+header ul li a:hover {
+    border-color: #5b6168;
+}
 /* end header */
 
 
 
 /* start slider */
+#jumbotron {
+    background-color: #3c3c52;
+    background-image: url(../images/slider/pic_slider.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#jumbotron .container {
+    min-height: 660px;
+    display: flex;
+    align-items: center;
+    position: relative;
 
+}
+#jumbotron .info {
+    max-width: 675px;
+}
+#jumbotron .info h1{
+    font-size: 36px;
+    line-height: 42px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+#jumbotron .info p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #ccd0d7;
+    margin-top: 24px;
+}
+#jumbotron .info a{
+    display: inline-block;
+    height: 44px;
+    line-height: 44px;
+    padding: 0px 28px;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-right: 11px;
+}
+#jumbotron .info div {
+    margin-top: 36px;
+}
+#jumbotron .info a:hover{
+    background-color:#23b7a4;
+    border-color: #23b7a4;
+}
+#jumbotron .dots {
+    position: absolute;
+    right: 15px;
+    bottom: 30px;
+    
+}
+#jumbotron .dots a{
+    width: 13px;
+    height: 13px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    text-indent: -100000px;
+}
+#jumbotron .dots a:hover, #jumbotron .dots a.active{
+    background-color: white;
+}
 /* end slider */
 
 
