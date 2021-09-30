@@ -20,272 +20,498 @@ li {
 body {
     font-family: Myriad, Roboto, sans-serif;
 }
+
 a:link, a:active, a:visited {
     text-decoration: none;
 }
+
 .container{
     max-width: 1140px;
     margin: 0px auto;
     padding: 0px 15px;
 }
 
-/* start header */
-header {
-    background-color:   #1d2126;
-    z-index: 10;
-    left: 0;
-    right: 0;
-    top: 0;
-    position: fixed;
-}
-header h1 {
-    height: 30px;
-}
-header .container {
-    display: flex;
-    justify-content: space-between;
-    padding: 26px 15px;
-    line-height: 30px;
-}
-header ul {
-    height: 30px;
-}
-header ul li {
-    display: inline-block;
-    height: 30px;
-}
-header ul li a {
-    display: inline-block;
-    color: #a4aead;
-    font-size:  14px;
-    text-transform:  uppercase;
-    line-height: 30px;
-    padding: 0px 10px;
-    margin: 0px 15px;
-    border: 2px solid transparent;
-    border-radius: 5px;
-}
+section {
+    display: block;
+} 
 
-header ul li a.active {
-    color: #23b7a4;
-    border-color: #23b7a4;
-}
-header ul li a:hover {
-    border-color: #5b6168;
-}
-
-.checkbtn {
-
-    font-size: 40px;
-    color: white;
-    cursor: pointer;
-    display: none;
-}
-
-#check {
-    display: none;
-}
-
-
-/* end header */
-
-
-
-/* start slider */
-#jumbotron {
-    background-color: #3c3c52;
-    background-image: url(../images/slider/pic_slider.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-#jumbotron .container {
-    min-height: 660px;
-    display: flex;
-    align-items: center;
-    position: relative;
-
-}
-#jumbotron .info {
-    max-width: 675px;
-}
-#jumbotron .info h1{
-    font-size: 36px;
+h2 {
+    padding: 0px 21px;
+    margin-bottom: 60px;
+    border-left: 10px solid #e1e6ea;
     line-height: 42px;
-    color: white;
+    color: #292f36;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 36px;
+    font-weight: normal;
     text-transform: uppercase;
+}
+
+h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 42px;
+    color: #292f36;
+    font-family: 'Quattrocento Sans', sans-serif;
     font-weight: normal;
 }
-#jumbotron .info p {
-    font-size: 16px;
-    line-height: 26px;
-    color: #ccd0d7;
-    margin-top: 24px;
-}
-#jumbotron .info a{
-    display: inline-block;
-    height: 44px;
-    line-height: 44px;
-    padding: 0px 28px;
-    color: white;
-    font-size: 14px;
-    text-transform: uppercase;
-    border: 2px solid white;
-    border-radius: 5px;
-    margin-right: 11px;
-}
-#jumbotron .info div {
-    margin-top: 36px;
-}
-#jumbotron .info a:hover{
-    background-color:#23b7a4;
-    border-color: #23b7a4;
-}
-#jumbotron .dots {
-    position: absolute;
-    right: 15px;
-    bottom: 30px;
-    
-}
-#jumbotron .dots a{
-    width: 13px;
-    height: 13px;
-    border: 2px solid white;
-    border-radius: 50%;
-    display: inline-block;
-    text-indent: -100000px;
-}
-#jumbotron .dots a:hover, #jumbotron .dots a.active{
-    background-color: white;
-}
-/* end slider */
-
-
 
 /* start about */
+#container-bottom {
+    height: 612px;
+    border-bottom: 1px solid #dde1e4;
+}
 
+#container-bottom .container {
+    height: 100%;
+    margin-top: 80px;
+}
+
+#container-bottom #about {
+    margin-top: -5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#container-bottom .container #description {
+    max-width: 654px;
+}
+
+#container-bottom .container #description p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #8d8f92;
+}
+
+#container-bottom .container #description p:first-child {
+    margin-bottom: 25px;
+}
+
+#container-bottom #description ul {
+    margin-top: 46px;
+    font-size: 0;
+}
+
+#container-bottom #description ul li {
+    width: 60px;
+    height: 60px;
+    background-color: #c8cdd0;
+    margin-right: 1px;
+    text-indent: -100000px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: background-color 0.4s ease-in-out;
+}
+
+#container-bottom #description ul li:hover {
+    background-color: #d0d5d9;
+    cursor: pointer;
+}
+
+#container-bottom #description ul li:nth-child(1) {
+    background-image: url(../images/social/facebook.png);
+}
+#container-bottom #description ul li:nth-child(2) {
+    background-image: url(../images/social/twitter.png);
+}
+#container-bottom #description ul li:nth-child(3) {
+    background-image: url(../images/social/google.png);
+}
+#container-bottom #description ul li:nth-child(4) {
+    background-image: url(../images/social/dribbble.png);
+}
+#container-bottom #description ul li:nth-child(5) {
+    background-image: url(../images/social/behance.png);
+    margin-right: 0;
+}
+
+#container-bottom #about > ul {
+    width: 457px;
+    counter-reset: number-list-style;
+}
+
+#container-bottom #about > ul li {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#container-bottom #about > ul li::before{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #ffffff;
+    background-color: #23b7a4;
+    font-size: 20px;
+    counter-increment: number-list-style;
+    content: counter(number-list-style, decimal-leading-zero);
+    display: inline-block;
+    text-align: center;
+}
+
+#container-bottom #about > ul li div {
+    width: 387px;
+}
+
+#container-bottom #about > ul li p {
+    line-height: 26px;
+    color: #8d8f92;
+    font-size: 16px;
+}
 /* end about */
 
 
 
-/* start teams */
+/* start team */
+#team .container {
+    margin-top: 80px;
+    height: 650px;
+}
 
-/* end teams */
+#team #team-member {
+    display: plex;
+    justify-content: space-between;
+}
 
+#team #team-member .person {
+    width: calc((100% - 90px) / 4);
+    height: 375px;
+    position: relative;
+    overflow-y: hidden;
+}
 
+#team #team-member .person .information {
+    background-color: #e1e6ea;
+    height: 100%;
+    transition: background-color 0.5s ease;
+}
 
-/* palces */
+#team #team-member .person .information a {
+    display: block;
+    font-size: 0;
+}
 
-/* end places */
+#team-member .person .information p {
+    margin-left: 21px  ;
+}
 
+#team-member .person .information p:nth-child(2) {
+    margin-top: 21px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #292f36;
+}
 
+#team #team-member .person .information p:last-child{
+    padding-bottom: 17px;
+    margin-top: 11px;
+    line-height: 14px;
+    font-size: 14px;
+    color: #8d8f92;
+}
 
-/* services */
+#team #team-member .person .mask-person {
+    position: absolute;
+    top: -100000px;
+    left: 0;
+    height: 300px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: top 0.2s ease-out;
+}
 
-/* end services */
+#team #team-member .person:hover .mask-person {
+    top: 0;
+}
 
+#team #team-member .person:hover .information {
+    background-color: #3a454d;
+}
 
+#team #team-member .person:hover .information p {
+    color: #fff;
+}
 
-/* start features */
+#team #team-member .person .mask-person a:hover {
+    background-color: #4e5a62;
+}
 
-/* end features */
+#team #team-member .person .mask-person a {
+    margin-right: 1px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color:  #3a454d;
+    text-indent: -100000px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: background-color 0.6s ease;
+}
 
+#team #team-member .person .mask-person a:nth-child(1) {
+    background-image: url(../images/social/twitter.png);
+}
 
+#team #team-member .person .mask-person a:nth-child(2) {
+    background-image: url(../images/social/facebook.png);
+}
 
-/* start contact */
+#team #team-member .person .mask-person a:nth-child(3) {
+    background-image: url(../images/social/linkedin.png);
+    margin-right: 0px;
+}
 
-/* end contact */
-
-
-
-/* start footer */
-
-/* end footer */
-
-
+/* end team */
 
 /* responsive */
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {  
     .container {
         width: 90%;
+    }
+
+    /* about */
+    #container-bottom .container #about #description {
+        width: 55%;
+    }
+
+    #container-bottom .container #about > ul {
+        width: 40%;
+    }
+
+    #container-bottom .container #about > ul li::before {
+        width: 11%;
+    }
+
+    #container-bottom .container #about > ul li div {
+        width: 85%;
+    }
+
+    /* team */
+    #team #team-member .person .information img {
+        max-width: 100%;
     }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-   /* jumbotron */
-   #jumbotron .container {
-       min-height: 600px;
-   }
+    /* about */
+    #container-bottom .container #about #description {
+        width: 52%;
+    }
+    
+    #container-bottom .container #about > ul {
+        width: 46%;
+    }
+
+    #container-bottom .container #about > ul li::before {
+        width: 11%;
+    }
+
+    #container-bottom .container #about > ul li div {
+        width: 85%;
+    }
+
+    /* team */
+    #team .container {
+        height: 575px;
+    }
+
+    #team #team-member .person {
+        height: min-content; 
+    }
+
+    #team #team-member .person:hover .mask-person {
+        height: calc(100% - 79px);
+    }
+
+    #team #team-member .person .information img {
+        max-width: 100%;
+    }
+
+    #team #team-member .person {
+        max-width: calc((100%-60px)/4);
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    /* header */
-    
-    
-    /* jumbotron */
-   #jumbotron .container {
-    min-height: 600px;
-}
+    /* about */
+    #container-bottom {
+        height: fit-content;
+    }
+
+    #container-bottom #about {
+        flex-direction: column;
+    }
+
+    #container-bottom .container #description {
+        padding-bottom: 30px;
+    }
+
+    #container-bottom #about > ul {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    #container-bottom #about > ul li div {
+        width: 90%;
+    }
+
+    /* team */
+    #team .container {
+        height: fit-content;
+    }
+
+    #team #team-member {
+        flex-wrap: wrap;
+    }
+
+    #team #team-member .person {
+        width: calc((100% - 40px) / 2);
+        padding: 0px 43px;
+        margin-bottom: 40px;
+    }
+
+    #team #team-member .person .information {
+        overflow-y: hidden;
+    }
+
+    #team #team-member .person .information a img {
+        max-width: 100%;
+        width: fit-content;
+    }
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
-   /* header */
-   .checkbtn {
-       display: block;
-   }
+    .container {
+        width: 90%;
+    }
+    
+    /* about */
+    #container-bottom {
+        height: fit-content;
+    }
 
-   
-   header ul {
-       position: fixed;
-       width: 100%;
-       height: 100vh;
-       background-color: #2c3e50;
-       top: 80px;
-       left: -100%;
-       text-align: center;
-       transition: all .5s;
-   }
-   header ul li {
-       display: block;
-       margin: 30px;
-       line-height: 30px;
-   }
-   #check:checked ~ ul {
-       left: 0;
-   }
-  /* jumbotron */
-  #jumbotron .container {
-    min-height: 600px;
-  }
+    #container-bottom #about {
+        flex-direction: column;
+    }
+
+    #container-bottom .container #description {
+        padding-bottom: 30px;
+    }
+
+    #container-bottom #about > ul {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    #container-bottom #about > ul li {
+        width: 100%;
+    }
+
+
+    #container-bottom #about > ul li div {
+        width: 85%;
+    }
+
+    /* team */
+    #team .container {
+        height: fit-content;
+    }
+
+    #team #team-member {
+        flex-wrap: wrap;
+    }
+
+    #team #team-member .person {
+        width: calc((100% - 40px) / 2);
+        padding: 0px 43px;
+        margin-bottom: 40px;
+    }
+    
+    #team #team-member .person .information {
+        overflow-y: hidden;
+    }
+
+    #team #team-member .person .information a img {
+        max-width: 100%;
+        width: 
+        fit-content;
+    }
+    #team #team-member .person {
+        height: fit-content;
+    }
+
+    #team #team-member .person:hover .mask-person {
+        height: calc(100% - 79px);
+    }
+
 }
 
 @media screen and (max-width: 600px) {
-    .checkbtn {
-        display: block;
-    }
- 
-    
-    header ul {
-        position: fixed;
+    .container {
         width: 100%;
-        height: 100vh;
-        background-color: #2c3e50;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
     }
-    header ul li {
-        display: block;
-        margin: 30px;
-        line-height: 30px;
+    
+    /* about */
+    #container-bottom {
+        height: fit-content;
     }
-    #check:checked ~ ul {
-        left: 0;
+
+    #container-bottom #about {
+        flex-direction: column;
     }
-   /* jumbotron */
-   #jumbotron .container {
-     min-height: 600px;
+
+    #container-bottom .container #description {
+        padding-bottom: 30px;
+    }
+
+    #container-bottom #about > ul {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    #container-bottom #about > ul li {
+        width: 100%;
+    }
+
+    #container-bottom #about > ul li div {
+        width: 82%;
+    }
+
+    /* team */
+    #team .container {
+        height: fit-content;
+    }
+    
+    #team #team-member {
+        flex-wrap: wrap;
+    }
+    
+    #team #team-member .person {
+        width: 263px;
+        /* padding: 0px 43px; */
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    
+    #team #team-member .person .information {
+        overflow-y: hidden;
+    }
+    
+    #team #team-member .person .information a img {
+        max-width: 100%;
+        width: fit-content;
+    }
+    
+    #team #team-member .person {
+        height: fit-content;
+    }
+    
+    #team #team-member .person:hover .mask-person {
+        height: calc(100% - 79px);
     }
 }
