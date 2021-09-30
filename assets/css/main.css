@@ -28,7 +28,15 @@ a:link, a:active, a:visited {
     margin: 0px auto;
     padding: 0px 15px;
 }
-
+h2 {
+    font-size: 36px;
+    line-height: 42px;
+    color: #292f36;
+    font-weight: normal;;
+    border-left: 10px solid #e1e6ea;
+    padding: 0px 21px;
+    margin-bottom: 60px;
+}
 /* start header */
 header {
     background-color:   #1d2126;
@@ -181,14 +189,101 @@ header ul li a:hover {
 
 
 /* services */
+#services .container {
+    margin-top: 80px;
+}
 
-/* end services */
+#group-services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    margin-bottom: 68px;
+}
+
+#group-services .service {
+    width: calc((100% - 90px) /4);
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+#group-services .service a {
+    display: block;
+    height: 48px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    text-indent: -100000px;
+
+}
+
+#group-services .service:nth-child(4n+1) a {
+    background-image: url(/assets/images/services/cogs.png);
+}
+#group-services .service:nth-child(4n+2) a {
+    background-image: url(/assets/images/services/pencil.png);
+}
+#group-services .service:nth-child(4n+3) a {
+    background-image: url(/assets/images/services/mobile.png);
+}
+#group-services .service:nth-child(4n) a {
+    background-image: url(/assets/images/services/clock.png);
+}
+
+#group-services .service p:nth-child(2) {
+    font-size: 17px;
+    color: #292f36;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+#group-services .service p:nth-child(3) {
+    font-size: 16px;
+    line-height: 26px;
+    color: #8d8f92;
+}
 
 
 
-/* start features */
+/* features */
+#features {
+    background-color: #3a454d;
+}
+#features .container {
+    padding-top: 80px;
+}
 
-/* end features */
+#features h2 {
+    color: #ffffff;
+    border-left-color: #4e5a62;
+}
+
+#group-features {
+    display: flex;
+    justify-content: space-between;
+}
+
+#group-features .feature {
+    width: calc((100% - 60px)/3);
+    margin-bottom: 115px;
+}
+
+#group-features .feature a {
+    text-indent: -100000px;
+}
+
+#group-features .feature p:nth-child(2) {
+    margin-top: 42px;
+    margin-bottom: 14px;
+    font-size: 18px;
+    line-height: 42px;
+    color: #ffffff;
+}
+
+#group-features .feature p:nth-child(3) {
+    font-size: 16px;
+    line-height: 26px;
+    color: #dcdfe1;
+}
 
 
 
@@ -210,6 +305,10 @@ header ul li a:hover {
     .container {
         width: 90%;
     }
+    /* features */
+    #features #group-features .feature img {
+        max-width: 100%;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -217,6 +316,10 @@ header ul li a:hover {
    #jumbotron .container {
        min-height: 600px;
    }
+   /* features */
+   #features #group-features .feature img {
+    max-width: 100%;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -226,7 +329,25 @@ header ul li a:hover {
     /* jumbotron */
    #jumbotron .container {
     min-height: 600px;
-}
+    }
+    /* featuers */
+    #group-features {
+        flex-wrap: wrap;
+        text-align: center;
+        padding-top: 60px;
+    }
+    #group-features .feature {
+        width: 100%;
+    }
+    #group-features .feature img {
+        transform: scale(1.35);
+    }
+    #group-features .feature p:nth-child(2) {
+        margin-top: 60px;
+    }
+    #group-features .feature p:nth-child(3) {
+        padding: 0 50px;
+    }
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
@@ -258,6 +379,24 @@ header ul li a:hover {
   #jumbotron .container {
     min-height: 600px;
   }
+    /* features */
+    #group-features {
+        flex-wrap: wrap;
+        text-align: center;
+        padding-top: 60px;
+    }
+    #group-features .feature {
+        width: 100%;
+    }
+    #group-features .feature img {
+        transform: scale(1.35);
+    }
+    #group-features .feature p:nth-child(2) {
+        margin-top: 60px;
+    }
+    #group-features .feature p:nth-child(3) {
+        padding: 0 50px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -287,5 +426,29 @@ header ul li a:hover {
    /* jumbotron */
    #jumbotron .container {
      min-height: 600px;
+    }
+    /* features */
+    #group-features {
+        flex-wrap: wrap;
+        text-align: center;
+        padding-top: 60px;
+    }
+    #group-features .feature {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    #group-features .feature img {
+        width: 100%;
+    }
+    #group-features .feature p:nth-child(2) {
+        margin-top: 60px;
+    }
+    #group-features .feature p:nth-child(3) {
+        padding: 0 50px;
+    }
+    /* services */
+    #group-services .service {
+        width: calc((100% - 40px) /2);
     }
 }
