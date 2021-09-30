@@ -174,13 +174,7 @@ header ul li a:hover {
 
 
 
-/* palces */
-
-/* end places */
-
-
-
-/* services */
+/* places */
 #places{
     background-color: #3a454d;
     padding-top: 80px;
@@ -267,6 +261,12 @@ header ul li a:hover {
 #places #more_places a:hover{
     background-color: rgba(41, 47, 54, 0.7);
 }
+/* end places */
+
+
+
+/* services */
+
 /* end services */
 
 
@@ -278,6 +278,102 @@ header ul li a:hover {
 
 
 /* start contact */
+#contact{
+    background-color: white;
+    padding-top: 30px;
+    margin-bottom: 90px;
+}
+#contact .container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    position: relative;
+}
+#contact h2{
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: normal;
+    border-left: 10px solid #e1e6ea;
+    padding: 0px 20px;
+    margin-bottom: 60px;
+}
+#contact #map{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+#contact h4{
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #292f36;
+    margin-bottom: 20px;
+}
+#contact p{
+    font-size: 16px;
+    color: #8d8f92;
+    margin-bottom: 25px;
+}
+#contact form {
+    max-width: 555px;
+    background-color: #ffffff;
+    margin-top: -190px;
+    margin-left: 40px;
+    padding: 0 30px;
+    font-size: 0;
+}
+#contact form label {
+    padding-left: 5px;
+    display: inline-block;
+    width: 240px;
+    font-size: 14px;
+    margin-top: 26px;
+    margin-bottom: 15px;
+    color: #8d8f92;
+}
+#contact form label:nth-child(1) {
+    margin-right: 15px;
+}
+#contact form input[type="text"] {
+    width: 240px;
+    height: 45px;
+    background-color: #eaeef1;
+    border: none;
+    margin-right: 15px;
+    padding: 0 15px;
+    border-radius: 3px;
+    font-size: 18px;
+}
+#contact form input[type="email"] {
+    width: 240px;
+    height: 45px;
+    background-color: #eaeef1;
+    border: none;
+    margin-right: 0;
+    padding: 0 15px;
+    border-radius: 3px;
+    font-size: 18px;
+}
+#contact form textarea {
+    width: 495px;
+    height: 150px;
+    background-color: #eaeef1;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 0 15px;
+}
+#contact form button {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #23b7a4;
+    height: 45px;
+    padding: 12px 35px;
+    font-size: 14px;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+}
 
 /* end contact */
 
