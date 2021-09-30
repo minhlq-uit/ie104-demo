@@ -217,16 +217,16 @@ header ul li a:hover {
 }
 
 #group-services .service:nth-child(4n+1) a {
-    background-image: url(/assets/images/services/cogs.png);
+    background-image: url(../assets/images/services/cogs.png);
 }
 #group-services .service:nth-child(4n+2) a {
-    background-image: url(/assets/images/services/pencil.png);
+    background-image: url(../assets/images/services/pencil.png);
 }
 #group-services .service:nth-child(4n+3) a {
-    background-image: url(/assets/images/services/mobile.png);
+    background-image: url(../assets/images/services/mobile.png);
 }
 #group-services .service:nth-child(4n) a {
-    background-image: url(/assets/images/services/clock.png);
+    background-image: url(../assets/images/services/clock.png);
 }
 
 #group-services .service p:nth-child(2) {
