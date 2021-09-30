@@ -181,7 +181,92 @@ header ul li a:hover {
 
 
 /* services */
+#places{
+    background-color: #3a454d;
+    padding-top: 80px;
+}
+#places h2{
+    color: #ffffff;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: normal;
+    border-left: 10px solid #4e5a62;
+    padding: 0px 20px;
+    margin-bottom: 60px;
+}
+#places #places_list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
+#places #places_list .place{
+    width: calc((100% - 60px) / 3);
+    height: auto;
+    position: relative;
+    margin-bottom: 30px;
+}
+#places #places_list img{
+    max-width: 100%;
+}
+#places #places_list .place a:nth-child(2){
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+}
+#places #places_list .place p {
+    display: none;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    padding-left: 20px;
+    background-color: #292f36;
+    font-size: 18px;
+    line-height: 60px;
+    color: #ffffff;
+}
+#places #places_list .place a .mask {
+    display: none;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: calc(100% - 60px);
+    background-color: rgba(41, 47, 54, 0.5);
+    position: absolute;
+}
+#places #places_list .place:hover p{
+    display: block;
+}
+#places #places_list .place:hover a:nth-child(2){
+    display: block;
+}
+#places #places_list .place:hover .mask {
+    display: block;
+}
+
+#places #more_places{
+    text-align: center;
+}
+#places #more_places a{
+    display: inline-block;
+    height: 44px;
+    font-size: 14px;
+    line-height: 44px;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 30px;
+    margin: 30px auto 60px auto;
+}
+#places #more_places a:hover{
+    background-color: rgba(41, 47, 54, 0.7);
+}
 /* end services */
 
 
@@ -199,7 +284,23 @@ header ul li a:hover {
 
 
 /* start footer */
-
+#footer{
+    background-color: #3a454d;
+}
+#footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 15px;
+}
+#footer ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+#footer #about p{
+    font-size: 15px;
+    line-height: 26px;
+    color: white;
+}
 /* end footer */
 
 
@@ -217,6 +318,15 @@ header ul li a:hover {
    #jumbotron .container {
        min-height: 600px;
    }
+
+   /* places */
+   #places #places_list .place {
+    width: calc((100% - 40px)/2);
+    height: auto;
+    }
+    #places #places_list .place a img {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -226,7 +336,17 @@ header ul li a:hover {
     /* jumbotron */
    #jumbotron .container {
     min-height: 600px;
-}
+   }
+
+    /* places */
+    #places #places_list .place {
+        width: calc((100% - 40px)/2);
+        height: auto;
+    }
+    #places #places_list .place a img {
+        width: 100%;
+    }
+
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
@@ -258,6 +378,16 @@ header ul li a:hover {
   #jumbotron .container {
     min-height: 600px;
   }
+  
+    /* places */
+    #places #places_list .place {
+        width: calc((100% - 40px)/2);
+        height: auto;
+    }
+    #places #places_list .place a img {
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -287,5 +417,23 @@ header ul li a:hover {
    /* jumbotron */
    #jumbotron .container {
      min-height: 600px;
+    }
+
+    /* places */
+    #places #places_list .place {
+        width: 400px;
+        height: auto;
+        margin: 0px auto;
+        margin-bottom: 30px;
+    }
+    #places #places_list .place a img {
+        width: 100%;
+    }
+
+    /* footer */
+    section#footer .container {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 25px;
     }
 }
