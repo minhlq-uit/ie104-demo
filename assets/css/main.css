@@ -174,8 +174,93 @@ header ul li a:hover {
 
 
 
-/* palces */
+/* places */
+#places{
+    background-color: #3a454d;
+    padding-top: 80px;
+}
+#places h2{
+    color: #ffffff;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: normal;
+    border-left: 10px solid #4e5a62;
+    padding: 0px 20px;
+    margin-bottom: 60px;
+}
+#places #places_list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
+#places #places_list .place{
+    width: calc((100% - 60px) / 3);
+    height: auto;
+    position: relative;
+    margin-bottom: 30px;
+}
+#places #places_list img{
+    max-width: 100%;
+}
+#places #places_list .place a:nth-child(2){
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+}
+#places #places_list .place p {
+    display: none;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    padding-left: 20px;
+    background-color: #292f36;
+    font-size: 18px;
+    line-height: 60px;
+    color: #ffffff;
+}
+#places #places_list .place a .mask {
+    display: none;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: calc(100% - 60px);
+    background-color: rgba(41, 47, 54, 0.5);
+    position: absolute;
+}
+#places #places_list .place:hover p{
+    display: block;
+}
+#places #places_list .place:hover a:nth-child(2){
+    display: block;
+}
+#places #places_list .place:hover .mask {
+    display: block;
+}
+
+#places #more_places{
+    text-align: center;
+}
+#places #more_places a{
+    display: inline-block;
+    height: 44px;
+    font-size: 14px;
+    line-height: 44px;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 30px;
+    margin: 30px auto 60px auto;
+}
+#places #more_places a:hover{
+    background-color: rgba(41, 47, 54, 0.7);
+}
 /* end places */
 
 
@@ -193,13 +278,125 @@ header ul li a:hover {
 
 
 /* start contact */
+#contact{
+    background-color: white;
+    padding-top: 30px;
+    margin-bottom: 90px;
+}
+#contact .container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    position: relative;
+}
+#contact h2{
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: normal;
+    border-left: 10px solid #e1e6ea;
+    padding: 0px 20px;
+    margin-bottom: 60px;
+}
+#contact #map{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+#contact h4{
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #292f36;
+    margin-bottom: 20px;
+}
+#contact p{
+    font-size: 16px;
+    color: #8d8f92;
+    margin-bottom: 25px;
+}
+#contact form {
+    max-width: 555px;
+    background-color: #ffffff;
+    margin-top: -190px;
+    margin-left: 40px;
+    padding: 0 30px;
+    font-size: 0;
+}
+#contact form label {
+    padding-left: 5px;
+    display: inline-block;
+    width: 240px;
+    font-size: 14px;
+    margin-top: 26px;
+    margin-bottom: 15px;
+    color: #8d8f92;
+}
+#contact form label:nth-child(1) {
+    margin-right: 15px;
+}
+#contact form input[type="text"] {
+    width: 240px;
+    height: 45px;
+    background-color: #eaeef1;
+    border: none;
+    margin-right: 15px;
+    padding: 0 15px;
+    border-radius: 3px;
+    font-size: 18px;
+}
+#contact form input[type="email"] {
+    width: 240px;
+    height: 45px;
+    background-color: #eaeef1;
+    border: none;
+    margin-right: 0;
+    padding: 0 15px;
+    border-radius: 3px;
+    font-size: 18px;
+}
+#contact form textarea {
+    width: 495px;
+    height: 150px;
+    background-color: #eaeef1;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 0 15px;
+}
+#contact form button {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #23b7a4;
+    height: 45px;
+    padding: 12px 35px;
+    font-size: 14px;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+}
 
 /* end contact */
 
 
 
 /* start footer */
-
+#footer{
+    background-color: #3a454d;
+}
+#footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 15px;
+}
+#footer ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+#footer #about p{
+    font-size: 15px;
+    line-height: 26px;
+    color: white;
+}
 /* end footer */
 
 
@@ -217,6 +414,15 @@ header ul li a:hover {
    #jumbotron .container {
        min-height: 600px;
    }
+
+   /* places */
+   #places #places_list .place {
+    width: calc((100% - 40px)/2);
+    height: auto;
+    }
+    #places #places_list .place a img {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -226,7 +432,17 @@ header ul li a:hover {
     /* jumbotron */
    #jumbotron .container {
     min-height: 600px;
-}
+   }
+
+    /* places */
+    #places #places_list .place {
+        width: calc((100% - 40px)/2);
+        height: auto;
+    }
+    #places #places_list .place a img {
+        width: 100%;
+    }
+
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
@@ -258,6 +474,16 @@ header ul li a:hover {
   #jumbotron .container {
     min-height: 600px;
   }
+  
+    /* places */
+    #places #places_list .place {
+        width: calc((100% - 40px)/2);
+        height: auto;
+    }
+    #places #places_list .place a img {
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -287,5 +513,23 @@ header ul li a:hover {
    /* jumbotron */
    #jumbotron .container {
      min-height: 600px;
+    }
+
+    /* places */
+    #places #places_list .place {
+        width: 400px;
+        height: auto;
+        margin: 0px auto;
+        margin-bottom: 30px;
+    }
+    #places #places_list .place a img {
+        width: 100%;
+    }
+
+    /* footer */
+    section#footer .container {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 25px;
     }
 }
